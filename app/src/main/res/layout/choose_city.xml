@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choose_city"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:background="#2E2E2E">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/nav_icon"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mail"
+            android:text="何春江"
+            android:textColor="#FFF"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="chunjiang_he@163.com"
+            android:textColor="#FFF"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="#2E2E2E">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="我的城市"
+            android:textSize="25dp"
+            android:textColor="#fff"/>
+
+        <ImageButton
+            android:id="@+id/add_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/add_city_button"
+            android:layout_weight="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#2E2E2E">
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/location"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/myCites_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2E2E2E"/>
+
+</LinearLayout>
